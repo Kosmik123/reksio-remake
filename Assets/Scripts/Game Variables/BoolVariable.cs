@@ -8,6 +8,12 @@ public class BoolVariable : GameVariable
     [SerializeField]
     private bool value;
 
+    public BoolVariable(string name)
+    {
+        this.name = name;
+    }
+
+
     public bool Get()
     {
         return value;

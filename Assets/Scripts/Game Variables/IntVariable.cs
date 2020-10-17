@@ -10,6 +10,12 @@ public class IntVariable : GameVariable
     [SerializeField]
     private int value;
 
+    public IntVariable(string name)
+    {
+        this.name = name;
+        value = 0;
+    }
+
     public int Get()
     {
         return value;
