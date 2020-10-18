@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(Collider2D))]
 public class Clickable : MonoBehaviour
 {
+
     public Action[] actions;
 
     // Start is called before the first frame update
@@ -19,6 +20,11 @@ public class Clickable : MonoBehaviour
         
     }
 
+
+    private void OnMouseUpAsButton()
+    {
+        Debug.Log(gameObject.name);
+    }
 
 
 

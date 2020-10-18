@@ -7,18 +7,23 @@ public class StateOfGame : MonoBehaviour
     public StateOfGame main;
 
 
-    private Dictionary<string, BoolVariable> _switches;
-    private Dictionary<string, IntVariable> _variables;
+    private Dictionary<string, BoolVariable> _switches = new Dictionary<string, BoolVariable>();
+    private Dictionary<string, IntVariable> _variables = new Dictionary<string, IntVariable>();
 
     // Displaying 
     [SerializeField]
-    private List<BoolVariable> switches;
+    private List<BoolVariable> switches = new List<BoolVariable>();
     [SerializeField]
-    private List<IntVariable> variables;
+    private List<IntVariable> variables = new List<IntVariable>();
 
     private void Awake()
     {
         MakeStatic();
+    }
+
+    private void Start()
+    {
+        
     }
 
     private void MakeStatic()
@@ -40,7 +45,6 @@ public class StateOfGame : MonoBehaviour
             CreateSwitch(name);
         _switches[name].Set(value);
     }
-
     private void CreateSwitch(string name)
     {
         var newSwitch = new BoolVariable(name);
