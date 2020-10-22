@@ -6,7 +6,7 @@ using UnityEngine;
 public class Clickable : MonoBehaviour
 {
 
-    public Action[] actions;
+    public EventBehaviour[] behavoiurs;
 
     // Start is called before the first frame update
     void Start()

@@ -4,10 +4,13 @@ using UnityEngine;
 
 
 [System.Serializable]
-public class Action
+public abstract class Action : MonoBehaviour
 {
-
+    protected bool isActing;
+    public abstract void DoAction();
 }
+
+
 
 
 

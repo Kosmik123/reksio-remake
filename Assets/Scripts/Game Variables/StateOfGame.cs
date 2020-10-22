@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class StateOfGame : MonoBehaviour
 {
-    public StateOfGame main;
+    public static StateOfGame main;
 
 
     private Dictionary<string, BoolVariable> _switches = new Dictionary<string, BoolVariable>();
