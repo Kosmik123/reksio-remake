@@ -27,17 +27,17 @@ public class ChangeSwitches : Action
             switch (change.targetValue)
             {
                 case SwitchChange.SwitchTargetValue.ON:
-                    StateOfGame.main.SetSwitch(change.switchName, true);
+                    GameController.main.SetSwitch(change.switchName, true);
                     break;
 
                 case SwitchChange.SwitchTargetValue.OFF:
-                    StateOfGame.main.SetSwitch(change.switchName, false);
+                    GameController.main.SetSwitch(change.switchName, false);
                     break;
 
                 case SwitchChange.SwitchTargetValue.INVERSE:
-                    StateOfGame.main.SetSwitch(
+                    GameController.main.SetSwitch(
                         change.switchName,
-                        !StateOfGame.main.GetSwitch(change.switchName));
+                        !GameController.main.GetSwitch(change.switchName));
                     break;
             }
         } 

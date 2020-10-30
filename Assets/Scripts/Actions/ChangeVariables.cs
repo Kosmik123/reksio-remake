@@ -23,13 +23,13 @@
             switch(change.action)
             {
                 case VariableChange.VariableChangeType.SET:
-                    StateOfGame.main.SetVariable(change.variableName, change.targetValue);
+                    GameController.main.SetVariable(change.variableName, change.targetValue);
                     break;
 
                 case VariableChange.VariableChangeType.ADD:
-                    StateOfGame.main.SetVariable(
+                    GameController.main.SetVariable(
                         change.variableName, 
-                        change.targetValue + StateOfGame.main.GetVariable(change.variableName));
+                        change.targetValue + GameController.main.GetVariable(change.variableName));
                     break;
             }   
         }
