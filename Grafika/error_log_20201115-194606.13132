@@ -1,4 +1,0 @@
-Log file created at: 2020/11/15 19:46:06
-Running on machine: DESKTOP-4L3ILV9
-Log line format: [IWEF]mmdd hh:mm:ss.uuuuuu threadid file:line] msg
-F1115 19:46:06.709625  1728 cudnn_conv_layer.cpp:54] Check failed: status == CUDNN_STATUS_SUCCESS (1 vs. 0)  CUDNN_STATUS_NOT_INITIALIZED
